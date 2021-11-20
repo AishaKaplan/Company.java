@@ -1,0 +1,18 @@
+package day56_polymorphism.transportation;
+
+public class Tesla extends Car implements SelfDrivable, Electric{
+    @Override
+    public void go() {
+        System.out.println("TESLA--Tesla is driving");
+    }
+
+    @Override
+    public void charge() {
+        System.out.println("Tesla is charging");
+    }
+
+    @Override
+    public void selDrive() {
+        System.out.println("Tesla is in auto pilot");
+    }
+}
